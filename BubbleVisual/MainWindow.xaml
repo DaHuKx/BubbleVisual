@@ -1,0 +1,41 @@
+﻿<Window x:Class="BubbleVisual.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BubbleVisual"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" x:Name="Griddy">
+            <StackPanel x:Name="BordPanel" Orientation="Horizontal" VerticalAlignment="Bottom">
+                
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Background="Black">
+            <Button x:Name="StartButton"
+                        Visibility="Hidden"
+                        Height="35"
+                        Width="150"
+                        FontWeight="Bold"
+                        FontSize="20" Click="Button_Click"
+                        >
+                    Start
+            </Button>
+            <Button x:Name="InstallButton"
+                        Height="35"
+                        Width="150"
+                        FontWeight="Bold"
+                        FontSize="20" Click="InstallBorders"
+                        Margin="0,10">
+                Install
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
